@@ -24,7 +24,7 @@ https://gist.github.com/IRON-M4N/ab60750aed0d5b3a9c7f9ba1081df909
 <br />
 
 <h2 align="center">  ➥ Math AI </h1>
-
+t
 
 ```
 https://gist.github.com/IRON-M4N/1ec43c37634ac12aa20582d605c388c7
@@ -293,3 +293,32 @@ https://gist.github.com/IRON-M4N/1ff6a6624dadeb43103ee754b17be686
 </details>
 
 
+const {inrl, sleep} = require('../lib'); inrl({
+
+pattern: 'hi',
+
+DismissPrefix: true,
+
+fromMe: 'public'
+
+}, async (m) => {
+
+const {key} = await m.send("Loading");
+
+const emoji = ["❤️" "❤️‍🩹" "💜" "💖" "🖤" "💛" "😻"
+
+"💓"]
+
+let spae =
+
+for(i = 1; i<emoji.length;i++){
+
+await sleep(250);
+
+spae = spae+" ";
+
+await
+
+m.editMessage(m.from, spae+emoji[i], key);
+
+}});
